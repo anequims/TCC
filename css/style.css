@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow-x: hidden;
+}
+/* Configurando navbar */
+.navbar{
+	background: #7a7a7a;
+	width: 100vw;
+	height: 56px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 4vw;
+  z-index: 999;
+}
+/* Icones da Navbar */
+.navbar .nav_icons ul{
+  margin-top: 10px;
+	display: flex;
+  list-style: none;
+}
+
+
+.navbar .nav_icons li{
+  margin-right: 20px;
+}
+
+.navbar .nav_icons a{
+	text-decoration: none;
+	color: #fff;
+  font-size: 25px;
+}
+
+.navbar .nav_icons li:hover i{
+  color: black;
+}
+
+/* Barra de Pesquisa da Navbar */
+
+.nav_search .form-control {
+  padding-left: 20px;
+  width: 58vw;
+  margin-bottom: 10px;
+}
+
+.nav_search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2vw;
+  height: 2vh;
+  line-height: 40px;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+/* Dropdown da Navbar */
+.navbar .nav_right > ul{
+	display: flex;
+	align-items: center;
+  list-style: none;
+  margin-top: 8px;
+}
+
+.navbar .nav_right ul li.dd_main{
+	margin-left: 25px;
+	cursor: pointer;
+	font-size: 20px;
+	position: relative;
+}
+
+.navbar .nav_right ul li img{
+	width: 40px;
+}
+
+.navbar .dd_menu {
+  position: absolute;
+  right: -25px;
+  top: 52px;
+  display: flex;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.25);
+  display: none;
+}
+.navbar .dd_menu .dd_items{
+	padding: 15px 20px;
+}
+.navbar .dd_menu a, .navbar .dd_menu li{
+	margin-bottom: 10px;
+	color: #868686;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.navbar .dd_menu a:hover{
+  color: #000000;
+}
+.navbar .dd_main.active .dd_menu{
+	display: flex;
+}
+
+/* Tamanho Barra do Scrollbar */
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+/* Fundo do scrollbar */
+::-webkit-scrollbar-track {
+  background: #7a7a7a;
+  z-index: 1;
+}
+
+/* Barra da Scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #272727;
+  border-radius: 25px;
+
+
+}
+
+/* Pressionar o Scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+
+/* Cards */
+.card-link{
+  transition: 0.2s;
+}
+.card-link:hover{
+  transform: scale(1.1);
+  transition: 0.2s;
+  z-index: 2;
+}
