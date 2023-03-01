@@ -1,0 +1,56 @@
+.saias{
+    width: 20vw;
+    border: 0;
+    visibility: hidden;
+}
+.saias::-webkit-scrollbar{
+    display: none;
+}
+.saias option{
+    font-size: 24px;
+}
+.saias option:checked{
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+}
+.modelos{
+    border: 0;
+    background-color: transparent;
+}
+.form-check label{
+    width: 5vw;
+}
+
+@keyframes showEffect {
+    from{
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes hiddenEffect {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0.1;
+    }
+}
+@keyframes giro {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes igiro {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}

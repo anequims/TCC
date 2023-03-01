@@ -1,0 +1,31 @@
+
+form{
+    padding: 30px;
+    width: 25vw;
+    height: 540px;
+    border: 1px solid;
+    border-radius: 30px;
+}
+h4{
+    margin-bottom: 20px;
+    text-align: center;
+}
+p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+label{
+    margin-bottom: 6px;
+}
+input{
+    height: 35px;
+    border: 1px solid;
+    border-radius: 18px;
+}
+.cadastro_icones i{
+    border: 1px solid;
+    border-radius: 100%;
+    font-size: 24px;
+    padding: 3px;
+}
